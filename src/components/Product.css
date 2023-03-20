@@ -1,0 +1,43 @@
+.bottomCard {
+    background-color: #ececec;
+    padding: 10px;
+    margin-top: 10px;
+}
+.titleName {
+    font-size: 12px;
+}
+.bottomCardPrice {
+    display: flex;
+}
+.priceName {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.addToCart {
+    border: 1px solid #000 !important;
+    margin-left: auto !important ;
+    font-size: 12px !important;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+td {
+    text-align: center;
+}
+.checkoutTable {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #000;
+}
+.marginAuto {
+    margin-left: auto;
+}
+.emptyCart {
+    text-align: center;
+}
