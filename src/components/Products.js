@@ -6,11 +6,10 @@ import Cart from './Cart';
 
 const Products = () => {
   const [product, setProduct] = useState([]);
-  const [loading, setLoading] = useState(true)
+
   useEffect(() => {
     getProducts();
   },[])
-    console.log('loaoaoaoaoa', loading)
   const getProducts = async () => {
     try {
       const requestConfig = {
@@ -20,7 +19,6 @@ const Products = () => {
       const response = await NetworkRequest(requestConfig);
         if (response) {
           setProduct(response.products);
-          setLoading(false)
         }
       } catch (error) {
           console.log(error);
@@ -34,7 +32,6 @@ const Products = () => {
             <Grid xs={4} style={{marginBottom:'10px'}}>
               <ProductCard 
                 item = {item} 
-                loading = {loading}
               />
             </Grid>
           )    
